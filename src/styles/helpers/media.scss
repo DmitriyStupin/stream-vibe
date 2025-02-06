@@ -1,0 +1,69 @@
+$laptop: 1440px;
+$tablet: 1023px;
+$mobile: 767px;
+$mobile-s: 480px;
+// Значения взяты из брейкпоинтов библиотеки Bootstrap 
+
+@mixin laptop-above {
+  @media (width > $laptop) {
+    @content; // Поместит все внутренности, которые мы будем передавать, внутрь конкретного медиа-выражения
+  }
+}
+
+@mixin laptop {
+  @media (width <= $laptop) {
+    @content; // Поместит все внутренности, которые мы будем передавать, внутрь конкретного медиа-выражения
+  }
+}
+
+@mixin tablet-above {
+  @media (width > $tablet) {
+    @content; // Поместит все внутренности, которые мы будем передавать, внутрь конкретного медиа-выражения
+  }
+}
+
+@mixin tablet {
+  @media (width <= $tablet) {
+    @content; // Поместит все внутренности, которые мы будем передавать, внутрь конкретного медиа-выражения
+  }
+}
+
+@mixin mobile-above {
+  @media (width > $mobile) {
+    @content; // Поместит все внутренности, которые мы будем передавать, внутрь конкретного медиа-выражения
+  }
+}
+
+@mixin mobile {
+  @media (width <= $mobile) {
+    @content; // Поместит все внутренности, которые мы будем передавать, внутрь конкретного медиа-выражения
+  }
+}
+
+@mixin mobile-s-above {
+  @media (width > $mobile-s) {
+    @content; // Поместит все внутренности, которые мы будем передавать, внутрь конкретного медиа-выражения
+  }
+}
+
+@mixin mobile-s {
+  @media (width <= $mobile-s) {
+    @content; // Поместит все внутренности, которые мы будем передавать, внутрь конкретного медиа-выражения
+  }
+}
+
+@mixin hover($hasActiveEffectOnMobile: true) {
+  @media (any-hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+
+  @if($hasActiveEffectOnMobile) {
+    @media (any-hover: none) {
+      &:active {
+        @content;
+      }
+    }
+  }
+}
