@@ -24,4 +24,39 @@
     align-items: center;
     column-gap: 16px;
   }
+
+  &__menu {
+    padding: fluid-to-laptop(10, 8);
+    background-color: var(--color-black-06);
+    outline: var(--border-width-l) solid var(--color-black-12);
+    border-radius: var(--border-radius-l);
+    
+    @include laptop {
+      border-radius: var(--border-radius-m);
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 6px;
+    }
+
+    &-link {
+      padding: fluid-to-laptop(14, 12) fluid-to-laptop(24, 20);
+      color: var(--color-gray-75);
+      border-radius: var(--border-radius-s);
+
+      @include hover {
+        color: var(--color-white);
+        background-color: var(--color-red-60);
+      }
+
+      &.is-active {
+        font-weight: 500;
+        color: var(--color-white);
+        background-color: var(--color-black-10);
+        pointer-events: none;
+      }
+    }
+  }
 }
