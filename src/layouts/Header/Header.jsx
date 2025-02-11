@@ -32,7 +32,8 @@ const Header = (props) => {
     <header className='header'>
       <div className="header__inner container">
         <Logo loading='eager'></Logo>
-        <nav className="header__menu">
+        <dialog className="header__overlay-menu-dialog">
+          <nav className="header__menu">
           <ul className="header__menu-list">
             {menuItems.map(({label, href}, index) => (
               <li className='header__menu-item' key={index}>
@@ -47,8 +48,8 @@ const Header = (props) => {
               </li>
             ))}
           </ul>
-        </nav>
-        <div className="header__actions">
+          </nav>
+          <div className="header__actions">
           <Button 
             className="header__button"
             label="Search"
@@ -65,9 +66,11 @@ const Header = (props) => {
             iconName="notification"
           >
           </Button>
-        </div>
+          </div>
+        </dialog>
+        
         <BurgerButton
-          className="header__burger-button"
+          className="header__burger-button visible-tablet"
         >
         </BurgerButton>
       </div>
