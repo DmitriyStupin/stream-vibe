@@ -1,4 +1,4 @@
-.button {
+.button { 
   @include flex-center(true);
 
   column-gap: 4px;
@@ -41,8 +41,10 @@
       @include square(44px);
 
       .button__icon {
-        --iconSize: #{fluid-to-laptop(34, 24)}
+        --iconSize: #{fluid-to-laptop(34, 24)};
       }
     }
   }
 }
+  
+
