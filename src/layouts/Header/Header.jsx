@@ -1,6 +1,7 @@
 import Logo from '@/components/Logo';
 import './Header.scss'
 import classNames from 'classnames';
+import Button from '@/components/Button';
 
 const Header = (props) => {
   const {
@@ -46,6 +47,24 @@ const Header = (props) => {
             ))}
           </ul>
         </nav>
+        <div className="header__actions">
+          <Button 
+            className="header__button"
+            label="Search"
+            isLabelHidden
+            mode="transparent"
+            iconName="search"
+          >
+          </Button>
+          <Button 
+            className="header__button"
+            label="Notifications"
+            isLabelHidden={true}
+            mode="transparent"
+            iconName="notification"
+          >
+          </Button>
+        </div>
       </div>
     </header>
   )
