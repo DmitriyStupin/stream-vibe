@@ -9,7 +9,7 @@ const Button = (props) => {
     type = 'button',
     target,
     /**
-     * '' (default) | 'transparent' 
+     * '' (default) | 'transparent' | 'black-10'
      */
     mode='',
     label,
@@ -19,6 +19,7 @@ const Button = (props) => {
      * 'before' | 'after'
      */
     iconPostition = 'before',
+    hasFillIcon,
   } = props
 
   const isLink = href !== undefined
@@ -31,6 +32,7 @@ const Button = (props) => {
     <Icon
       className='button__icon'
       name={iconName}
+      hasFill={hasFillIcon}
     >
     </Icon>
   )
