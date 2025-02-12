@@ -1,3 +1,4 @@
+import Categories from "@/sections/Categories"
 import Hero from "@/sections/Hero"
 
 export const metadata = {
@@ -9,6 +10,7 @@ export default function () {
   return (
     <>
       <Hero></Hero>
+      <Categories></Categories>
     </>
   )
 }
