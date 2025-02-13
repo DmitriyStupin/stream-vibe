@@ -1,7 +1,7 @@
 .category-card {
   --categoryCardImagesGradientOpacity: 1;
 
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   padding: fluid(30, 20);
   background-color: var(--color-black-10);
@@ -16,6 +16,10 @@
     --categoryCardImagesGradientOpacity: 0;
     color: var(--color-white);
     border-color: currentColor;
+  }
+
+  &:focus-visible {
+    outline-offset: -2px;
   }
 
   &__images {
