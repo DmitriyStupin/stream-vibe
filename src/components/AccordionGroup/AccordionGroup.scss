@@ -1,5 +1,7 @@
 .accordion-group {
   &--has-counter {
+    --accordionGroupCounterHeight: #{fluid(67, 46)};
+
     counter-reset: custom-counter;
     list-style: none;
 
@@ -16,7 +18,7 @@
         font-weight: 600;
         color: var(--color-white);
         min-width: fluid(62, 42);
-        height: fluid(67, 46);
+        height: var(--accordionGroupCounterHeight);
         background-color: var(--color-black-12);
         border: var(--border);
         border-radius: var(--border-radius-m);
