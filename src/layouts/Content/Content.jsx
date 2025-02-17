@@ -1,10 +1,15 @@
+import classNames from 'classnames';
 import './Content.scss'
 
 const Content = (props) => {
-  const { children } = props;
+  const { children, isResetPaddingTop = false } = props;
 
   return (
-    <main className="content">
+    <main
+      className={classNames('content', {
+        'content--reset-padding-top': isResetPaddingTop,
+      })}
+    >
       {children}
     </main>
   )
