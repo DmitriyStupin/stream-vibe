@@ -9,7 +9,7 @@ const Button = (props) => {
     type = 'button',
     target,
     /**
-     * '' (default) | 'transparent' | 'black-10' | 'black-08'
+     * '' (default) | 'transparent' | 'black-10' | 'black-08' | 'black-06'
      */
     mode='',
     label,
