@@ -1,4 +1,5 @@
 import getParams from "@/utils/getParams"
+import pxToRem from "@/utils/pxToRem"
 
 const rootSelector = '[data-js-tabs]'
 
@@ -15,8 +16,8 @@ class Tabs {
   }
 
   stateCSSVariables = {
-    activeButtonWidth: '--tabsActiveButtonWidth',
-    activeButtonOffsetLeft: '--tabsActiveButtonOffsetLeft'
+    activeButtonWidth: '--tabsNavigationActiveButtonWidth',
+    activeButtonOffsetLeft: '--tabsNavigationActiveButtonOffsetLeft'
   }
 
   constructor(rootElement) {
@@ -32,6 +33,7 @@ class Tabs {
     }
     this.limitTabsIndex = this.buttonElements.length - 1
     this.bindEvents()
+    setTimeout(this.bindObservers, 500)
   }
 
   updateUI() {
@@ -43,6 +45,10 @@ class Tabs {
       buttonElement.classList.toggle(this.stateClasses.isActive, isActive)
       buttonElement.ariaSelected = isActive
       buttonElement.tabIndex = isActive ? 0 : -1
+
+      if (isActive) {
+        this.updateNavigationCSSVars(buttonElement)
+      }
     })
 
     this.contentElements.forEach((contentElement, index) => {
@@ -50,6 +56,23 @@ class Tabs {
 
       contentElement.classList.toggle(this.stateClasses.isActive, isActive)
     })
+  }
+
+  updateNavigationCSSVars(
+      activeButtonElement = this.buttonElements[this.state.activeTabIndex]
+  )   {
+    const { width, left } = activeButtonElement.getBoundingClientRect()
+    const offsetLeft = left - this.navigationElement.getBoundingClientRect().left
+
+    this.navigationElement.style.setProperty(
+      this.stateCSSVariables.activeButtonWidth,
+      `${pxToRem(width)}rem`
+    )
+
+    this.navigationElement.style.setProperty(
+      this.stateCSSVariables.activeButtonOffsetLeft,
+      `${pxToRem(offsetLeft)}rem`
+    )
   }
 
   activateTab(newTabIndex) {
@@ -130,6 +153,16 @@ class Tabs {
       buttonElement.addEventListener('click', () => this.onButtonClick(index))
     })
     document.addEventListener('keydown', this.onKeyDown)
+  }
+
+  onResize= () => {
+    this.updateNavigationCSSVars()
+  } 
+
+  bindObservers = () => {
+    const resizeObserver = new ResizeObserver(this.onResize)
+
+    resizeObserver.observe(this.navigationElement)
   }
 }
 
