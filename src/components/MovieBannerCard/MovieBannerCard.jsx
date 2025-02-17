@@ -2,7 +2,7 @@ import { Image } from 'minista'
 import './MovieBannerCard.scss'
 import Button from '../Button'
 
-const MovieBannerCard = () => {
+const MovieBannerCard = (props) => {
   const {
     title,
     description,
@@ -32,6 +32,7 @@ const MovieBannerCard = () => {
             className='movie-banner-card__play-button'
             iconName="play"
             label="Play Now"
+            hasFillIcon
           >
           </Button>
           <div className="movie-banner-card__actions">
