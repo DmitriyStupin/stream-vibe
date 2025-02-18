@@ -6,6 +6,7 @@ const CategoryCard = (props) => {
   const {
     title,
     images = [],
+    badge,
   } = props
 
   return (
