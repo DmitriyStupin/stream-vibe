@@ -1,6 +1,6 @@
 import categoryItems from "../Categories/categoryItems"
 
-const collectionGroups = [
+const collectionGroups = [   
   {
     isActive: true,
     title: 'Movies',
@@ -206,6 +206,134 @@ const collectionGroups = [
             }
           }
         },
+      },
+      {
+        title: 'Trending Now',
+        movieItems: [
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/1.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/2.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/3.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/4.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/5.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/1.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/2.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/3.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/4.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/5.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/1.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/2.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/3.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/4.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/5.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/1.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/2.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/3.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/4.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+          {
+            title: 'Morbius',
+            imgSrc: '/src/assets/images/movies/5.jpg',
+            duration: '1h 30min',
+            views: '2K',
+          },
+        ],
       }
     ],
   }
