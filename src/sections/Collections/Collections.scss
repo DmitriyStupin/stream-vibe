@@ -1,6 +1,15 @@
 .collections {
   --collectionsGroupPadding: #{fluid-to-laptop(50, 40)};
 
+  padding-block: var(--section-padding-y);
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+
+  &.tabs {
+    --tabsBodyRowGap: #{fluid-to-laptop(170, 138)};
+  }
+
   &__group {
     display: grid;
     row-gap: fluid(100, 75);
