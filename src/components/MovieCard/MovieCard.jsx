@@ -1,6 +1,7 @@
 import { Image } from 'minista'
 import './MovieCard.scss'
 import Badge from '../Badge'
+import RatingView from '../RatingView'
 
 const MovieCard = (props) => {
   const {
@@ -45,6 +46,12 @@ const MovieCard = (props) => {
             hasFillIcon
           >
             {season}
+          </Badge>
+        )}
+
+        {rating && (
+          <Badge className="movie-card__rating-badge">
+            <RatingView {...rating} />
           </Badge>
         )}
 
