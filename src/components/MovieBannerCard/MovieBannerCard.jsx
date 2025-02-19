@@ -1,12 +1,16 @@
 import { Image } from 'minista'
 import './MovieBannerCard.scss'
 import Button from '../Button'
+import classNames from 'classnames'
 
 const MovieBannerCard = (props) => {
   const {
     title,
+    titleId,
+    TitleTag = 'h2',
     description,
     imgSrc,
+    isSmallPaddingY = false,
   } = props
 
   return (
@@ -18,11 +22,18 @@ const MovieBannerCard = (props) => {
         src={imgSrc}
       >
       </Image>
-      <div className="movie-banner-card__inner">
+      <div 
+        className={classNames('movie-banner-card__inner', {
+          'movie-banner-card__inner--small-padding-y': isSmallPaddingY,
+        })}
+      >
         <div className="movie-banner-card__body">
-          <h2 className="movie-banner-card__title h3">
+          <TitleTag 
+            className="movie-banner-card__title h3"
+            id={titleId}
+          >
             {title}
-          </h2>
+          </TitleTag>
           <div className="movie-banner-card__description hidden-mobile">
             <p>{description}</p>
           </div>
