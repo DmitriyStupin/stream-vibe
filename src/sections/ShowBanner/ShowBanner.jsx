@@ -4,7 +4,7 @@ const ShowBanner = () => {
   const titleId = 'show-banner-title'
 
   return (
-    <section 
+    <section
       className="container"
       aria-labelledby={titleId}
     >

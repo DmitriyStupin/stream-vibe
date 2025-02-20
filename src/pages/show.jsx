@@ -1,3 +1,5 @@
+import Seasons from "@/components/Seasons"
+import MovieDetails from "@/sections/MovieDetails"
 import ShowBanner from "@/sections/ShowBanner"
 
 export const metadata = {
@@ -8,6 +10,11 @@ export default function () {
   return (
     <>
       <ShowBanner></ShowBanner>
+      <MovieDetails
+        seasons={<Seasons></Seasons>}
+      >
+
+      </MovieDetails>
     </>
   )
 }
