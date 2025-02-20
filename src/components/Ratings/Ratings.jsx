@@ -3,7 +3,7 @@ import './Ratings.scss'
 
 const Ratings = (props) => {
   const {
-    items: [],
+    items = [],
   } = props
 
   return (

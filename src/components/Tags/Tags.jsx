@@ -2,16 +2,14 @@ import './Tags.scss'
 
 const Tags = (props) => {
   const {
-    items: [],
+    items = [],
   } = props
 
   return (
     <div className="tags">
       <ul className="tags__list">
         {items.map((tag, index) => (
-          <li className="tags__item"
-            key={index}
-          >
+          <li className="tags__item" key={index}>
             {tag}
           </li>
         ))}

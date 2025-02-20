@@ -22,4 +22,16 @@
       border-radius: inherit;
     }
   }
+
+  &__navigation {
+    margin-top: fluid(40, 24);
+
+    &.slider-navigation {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    width: auto;
+  }
 }
