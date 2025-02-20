@@ -1,16 +1,42 @@
 .person-card {
+  &:has(.person-card__body) {
+    display: flex;
+    align-items: center;
+    column-gap: fluid-to-laptop(10, 8);
+    padding: fluid(14, 10);
+    background-color: var(--color-black-08);
+    border: var(--border);
+    border-radius: var(--border-width-s);
+
+    .person-card__image {
+      width: fluid-to-laptop(57, 47);
+      border-radius: var(--border-radius-s);
+
+      @include laptop {
+        border-radius: var(--border-radius-xs);
+      }
+    }
+  }
+
   &__image {
-    width: fluid(102, 70);
-    border-radius: var(--border-radius-l);
-    border: var(--border-width-s) solid transparent;
-    transition-duration: var(--transtition-duration);
+    &:only-child {
+      width: fluid(102, 70);
+      border-radius: var(--border-radius-l);
+      border: var(--border-width-s) solid transparent;
+      transition-duration: var(--transtition-duration);
 
-    @include laptop {
-      border-radius: var(--border-radius-m)
-    }
+      @include laptop {
+        border-radius: var(--border-radius-m)
+      }
 
-    @include hover {
-      border-color: var(--color-white);
+      @include hover {
+        border-color: var(--color-white);
+      }
     }
+  }
+
+  &__name {
+    font-size: fluid-to-laptop(18, 16);
+    font-weight: 500;
   }
 }
