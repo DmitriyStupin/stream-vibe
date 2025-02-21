@@ -13,42 +13,50 @@ const Field = (props) => {
     type,
     placeholder,
     isRequired,
-    inputMode
+    inputMode,
+    mask,
   } = props
 
-  const Component = type === 'textarea' 
-    ? 'textarea' 
+  const Component = type === 'textarea'
+    ? 'textarea'
     : 'input'
 
-    return (
-      <div
-        className={classNames(className, 'field')}
-      >
-        <label 
-          className="field__label"
-          htmlFor={id} 
-        >
-          {label} {isRequired && (
-            <span 
-              className='field__required-star'
-              aria-hidden={true}
-            >*</span>
-          )}
-        </label> 
-        <div className="field__body">
-          <Component
-            className='field__control'
-            id={id}
-            type={type}
-            placeholder={placeholder}
-            required={isRequired}
-            inputMode={inputMode}
-          >
+  const  extraAttrs = {}
 
-          </Component>
-        </div>
+  if (mask) {
+    extraAttrs['data-js-input-mask'] = mask
+  }
+
+  return (
+    <div
+      className={classNames(className, 'field')}
+    >
+      <label
+        className="field__label"
+        htmlFor={id}
+      >
+        {label} {isRequired && (
+          <span
+            className='field__required-star'
+            aria-hidden={true}
+          >*</span>
+        )}
+      </label>
+      <div className="field__body">
+        <Component
+          className='field__control'
+          id={id}
+          type={type}
+          placeholder={placeholder}
+          required={isRequired}
+          inputMode={inputMode}
+          {...extraAttrs}
+        >
+
+        </Component>
       </div>
-    )
+    </div>
+  )
 }
 
 export default Field
