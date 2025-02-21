@@ -204,7 +204,7 @@ const MovieDetails = (props) => {
                 <span>Released Year</span>
               </h3>
               <div className="movie-details__description">
-                <time datetime="2022" className='h6'>2022</time>
+                <time dateTime="2022" className='h6'>2022</time>
               </div>
             </div>
             <div className="movie-details__group">

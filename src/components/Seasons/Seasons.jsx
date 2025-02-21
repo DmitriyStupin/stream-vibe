@@ -6,6 +6,7 @@ import './Seasons.scss'
 const Seasons = () => {
   return (
     <AccordionGroup
+      className="seasons"
       mode="dark"
       isOrderedList={false}
     >
@@ -20,7 +21,16 @@ const Seasons = () => {
           key={index}
           isArrowButton
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, porro!
+          <ul className="seasons__list">
+            {episodes.map((episode, index) => (
+              <li 
+                className="seasons__item"
+                key={index}
+              >
+                {episode.title}
+              </li>
+            ))}
+          </ul>
         </Accordion>
       ))}
     </AccordionGroup>
