@@ -47,8 +47,8 @@ const EpisodeCard = (props) => {
               name="clock_stroke"
               ariaLabel="Duration"
             >
-              <span>{duration}</span>
             </Icon>
+            <span>{duration}</span>
           </div>
         </div>
         <div className="episode-card__description hidden-mobile">

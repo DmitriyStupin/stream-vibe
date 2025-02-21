@@ -1,5 +1,6 @@
 import Accordion from '../Accordion'
 import AccordionGroup from '../AccordionGroup'
+import EpisodeCard from '../EpisodeCard'
 import seasonItems from './seasonItems'
 import './Seasons.scss'
 
@@ -27,7 +28,10 @@ const Seasons = () => {
                 className="seasons__item"
                 key={index}
               >
-                {episode.title}
+              <EpisodeCard
+                {...episode}
+              >
+              </EpisodeCard>
               </li>
             ))}
           </ul>
