@@ -12,7 +12,8 @@ const Field = (props) => {
      */
     type,
     placeholder,
-    isRequired
+    isRequired,
+    inputMode
   } = props
 
   const Component = type === 'textarea' 
@@ -33,7 +34,7 @@ const Field = (props) => {
               aria-hidden={true}
             >*</span>
           )}
-        </label>
+        </label> 
         <div className="field__body">
           <Component
             className='field__control'
@@ -41,6 +42,7 @@ const Field = (props) => {
             type={type}
             placeholder={placeholder}
             required={isRequired}
+            inputMode={inputMode}
           >
 
           </Component>
