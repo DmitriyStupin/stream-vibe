@@ -1,3 +1,4 @@
+import Questions from "@/sections/Questions"
 import Support from "@/sections/Support"
 
 export const metadata = {
@@ -8,6 +9,7 @@ export default function () {
   return (
     <>
       <Support></Support>
+      <Questions></Questions>
     </>
   )
 }
