@@ -2,6 +2,9 @@
   --tabsBodyRowGap: 0;
   --tabsNonActiveContentDisplay: none;
 
+  display: grid;
+  row-gap: 20px;
+
   &--enable-only-on-mobile {
     @include mobile-above {
       --tabsNonActiveContentDisplay: block;
