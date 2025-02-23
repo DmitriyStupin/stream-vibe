@@ -18,7 +18,7 @@ const Seasons = () => {
           subtitle={subtitle}
           id={`season-${index}`}
           name="seasons"
-          isOpen={index === 0}
+          isOpen={index === 1}
           key={index}
           isArrowButton
         >

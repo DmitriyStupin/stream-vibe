@@ -20,14 +20,14 @@ const RatingView = (props) => {
       <div className="rating-view__stars">
         <img
           className="rating-view__stars-unfilled"
-          src="/rating/stars_unfilled.svg"
+          src="./rating/stars_unfilled.svg"
           width={98}
           height={18}
           alt=""
         />
         <img
           className="rating-view__stars-filled"
-          src="/rating/stars_filled.svg"
+          src="./rating/stars_filled.svg"
           width={98}
           height={18}
           alt=""
