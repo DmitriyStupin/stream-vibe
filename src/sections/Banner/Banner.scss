@@ -19,7 +19,7 @@
       text-align: center;
     }
 
-    @include mobile {
+    @include mobile-s {
       background:
         linear-gradient(135deg, var(--color-black-06) 0.42%, rgba(20, 15, 15, 0.97) 25.46%, rgba(34, 14, 14, 0.91) 46.72%, rgba(229, 0, 0, 0.00) 168.98%),
         url('../../assets/images/banner/bg_mobile.png') center/cover no-repeat;
@@ -29,5 +29,9 @@
   &__body {
     display: grid;
     row-gap: fluid(14, 10);
+  }
+
+  &__button {
+    flex-shrink: 0;
   }
 }

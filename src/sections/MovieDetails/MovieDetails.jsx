@@ -14,7 +14,7 @@ const MovieDetails = (props) => {
   } = props
 
   const titleId = 'movie-details-title'
-  const castSliderNavigationId = 'movie-card-slider-navigation'
+  const castSliderNavigationId = 'movie-cast-slider-navigation'
 
   const castItems = [
     { imgSrc: '/src/assets/images/people/1.jpg', imgAlt: 'Dmitry Stupin' },
