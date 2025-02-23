@@ -1,63 +1,63 @@
-// minista.config.ts
-import { defineConfig } from "minista"
+import { defineConfig } from 'minista'
 import path from 'path'
 
 export default defineConfig({
-  root: "",
-  base: "/",
-  public: "public",
-  out: "dist",
+  root: '',
+  base: '/',
+  public: 'public',
+  out: 'dist',
   assets: {
-    outDir: "assets",
-    outName: "[name]",
+    outDir: 'assets',
+    outName: '[name]',
     images: {
-      outDir: "assets/images",
-      outName: "[name]",
-      remoteName: "remote",
-      optimize: {
-        layout: "constrained",
+      outDir: 'assets/images',
+      outName: '[name]',
+      remoteName: 'remote',
+      optimize: 
+      {
+        layout: 'constrained',
         breakpoints: [
           320, 400, 640, 800, 1024, 1280, 1440, 1920, 2560, 2880, 3840,
         ],
         resolution: [1, 2],
-        format: "inherit",
+        format: 'inherit',
         formatOptions: {},
         quality: undefined,
         aspect: undefined,
         background: undefined,
-        fit: "cover",
-        position: "centre",
+        fit: 'cover',
+        position: 'centre',
       },
     },
     svgr: {
       svgrOptions: {},
     },
     icons: {
-      srcDir: "src/assets/icons",
-      outDir: "assets/images",
-      outName: "[dirname]",
+      srcDir: 'src/assets/icons',
+      outDir: 'assets/images',
+      outName: '[dirname]',
       svgstoreOptions: {
-        cleanSymbols: ["fill", "stroke"],
+        cleanSymbols: ['fill', 'stroke'],
       },
     },
     fonts: {
-      outDir: "assets/fonts",
-      outName: "[name]",
+      outDir: 'assets/fonts',
+      outName: '[name]',
     },
     bundle: {
-      outName: "bundle",
+      outName: 'bundle',
     },
     partial: {
       usePreact: false,
       useIntersectionObserver: true,
-      outName: "hydrate",
-      rootAttrSuffix: "partial-hydration",
-      rootValuePrefix: "ph",
-      rootDOMElement: "div",
-      rootStyle: { display: "contents" },
+      outName: 'hydrate',
+      rootAttrSuffix: 'partial-hydration',
+      rootValuePrefix: 'ph',
+      rootDOMElement: 'div',
+      rootStyle: { display: 'contents' },
       intersectionObserverOptions: {
         root: null,
-        rootMargin: "0px",
+        rootMargin: '0px',
         thresholds: [0],
       },
     },
@@ -65,23 +65,23 @@ export default defineConfig({
   resolve: {
     alias: [{
       find: '@/',
-      replacement: path.resolve('src') + '/'
+      replacement: path.resolve('src') + '/',
     }],
   },
   css: {
     modules: {
-      scopeBehaviour: "local",
+      scopeBehaviour: 'local',
       globalModulePaths: [],
       generateScopedName: undefined,
-      hashPrefix: "",
-      localsConvention: "camelCaseOnly",
+      hashPrefix: '',
+      localsConvention: 'camelCaseOnly',
     },
     preprocessorOptions: {
       scss: {
         additionalData: `
           @use '@/styles/helpers' as *;
         `,
-        silenceDeprecations: ['legacy-js-api']
+        silenceDeprecations: ['legacy-js-api'],
       },
       less: {},
       stylus: {},
@@ -98,13 +98,13 @@ export default defineConfig({
     },
   },
   search: {
-    outDir: "assets",
-    outName: "search",
-    include: ["**/*"],
-    exclude: ["/404"],
-    baseUrl: "",
-    trimTitle: "",
-    targetSelector: "[data-search]",
+    outDir: 'assets',
+    outName: 'search',
+    include: ['**/*'],
+    exclude: ['/404'],
+    baseUrl: '',
+    trimTitle: '',
+    targetSelector: '[data-search]',
     hit: {
       minLength: 3,
       number: false,
@@ -115,10 +115,10 @@ export default defineConfig({
     },
   },
   delivery: {
-    include: ["**/*"],
-    exclude: ["/404"],
-    trimTitle: "",
-    sortBy: "path",
+    include: ['**/*'],
+    exclude: ['/404'],
+    trimTitle: '',
+    sortBy: 'path',
     archives: [],
   },
   beautify: {
@@ -129,7 +129,7 @@ export default defineConfig({
       max_preserve_newlines: 0,
       indent_inner_html: true,
       extra_liners: [],
-      inline: ["span", "strong", "b", "small", "del", "s", "code", "br", "wbr"],
+      inline: ['span', 'strong', 'b', 'small', 'del', 's', 'code', 'br', 'wbr'],
     },
     cssOptions: {
       indent_size: 2,
