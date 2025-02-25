@@ -25,10 +25,21 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 8px;
+
+    .badge {
+      width: 100%;
+    }
+
+    @include tablet {
+      flex-direction: column;
+      row-gap: 4px;
+    }
   }
 
   &__released-badge {
     width: 100%;
+    text-wrap: wrap;
+    text-align: center;
 
     &-label {
       color: var(--color-gray-75);

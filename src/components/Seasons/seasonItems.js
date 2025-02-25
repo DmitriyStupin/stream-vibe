@@ -10,7 +10,7 @@ const seasonItems = [
         duration: '49 min',
         video: {
           src: '/videos/video.mp4',
-          poster: '/public/video-posters/1.jpg',
+          poster: '/video-posters/1.jpg',
         }
       },
       {
@@ -20,7 +20,7 @@ const seasonItems = [
         duration: '56 min',
         video: {
           src: '/videos/video.mp4',
-          poster: '/public/video-posters/2.jpg',
+          poster: '/video-posters/2.jpg',
         }
       },
       {
@@ -30,7 +30,7 @@ const seasonItems = [
         duration: '52 min',
         video: {
           src: '/videos/video.mp4',
-          poster: '/public/video-posters/3.jpg',
+          poster: '/video-posters/3.jpg',
         }
       },
       {
@@ -40,7 +40,7 @@ const seasonItems = [
         duration: '51 min',
         video: {
           src: '/videos/video.mp4',
-          poster: '/public/video-posters/4.jpg',
+          poster: '/video-posters/4.jpg',
         }
       },
       {
@@ -50,7 +50,7 @@ const seasonItems = [
         duration: '53 min',
         video: {
           src: '/videos/video.mp4',
-          poster: '/public/video-posters/5.jpg',
+          poster: '/video-posters/5.jpg',
         }
       },
       {
@@ -60,7 +60,7 @@ const seasonItems = [
         duration: '49 min',
         video: {
           src: '/videos/video.mp4',
-          poster: '/public/video-posters/1.jpg',
+          poster: '/video-posters/1.jpg',
         }
       },
       {
@@ -70,7 +70,7 @@ const seasonItems = [
         duration: '49 min',
         video: {
           src: '/videos/video.mp4',
-          poster: '/public/video-posters/1.jpg',
+          poster: '/video-posters/1.jpg',
         }
       },
       {
@@ -80,7 +80,7 @@ const seasonItems = [
         duration: '49 min',
         video: {
           src: '/videos/video.mp4',
-          poster: '/public/video-posters/1.jpg',
+          poster: '/video-posters/1.jpg',
         }
       },
       {
@@ -90,7 +90,7 @@ const seasonItems = [
         duration: '49 min',
         video: {
           src: '/videos/video.mp4',
-          poster: '/public/video-posters/1.jpg',
+          poster: '/video-posters/1.jpg',
         }
       },
     ]
@@ -107,7 +107,7 @@ const seasonItems = [
         duration: '49 min',
         video: {
           src: '/videos/video.mp4',
-          poster: '/public/video-posters/1.jpg',
+          poster: '/video-posters/1.jpg',
         }
       },
       {
@@ -117,7 +117,7 @@ const seasonItems = [
         duration: '56 min',
         video: {
           src: '/videos/video.mp4',
-          poster: '/public/video-posters/2.jpg',
+          poster: '/video-posters/2.jpg',
         }
       },
       {
@@ -127,7 +127,7 @@ const seasonItems = [
         duration: '52 min',
         video: {
           src: '/videos/video.mp4',
-          poster: '/public/video-posters/3.jpg',
+          poster: '/video-posters/3.jpg',
         }
       },
       {
@@ -137,7 +137,7 @@ const seasonItems = [
         duration: '51 min',
         video: {
           src: '/videos/video.mp4',
-          poster: '/public/video-posters/4.jpg',
+          poster: '/video-posters/4.jpg',
         }
       },
       {
@@ -147,7 +147,7 @@ const seasonItems = [
         duration: '53 min',
         video: {
           src: '/videos/video.mp4',
-          poster: '/public/video-posters/5.jpg',
+          poster: '/video-posters/5.jpg',
         }
       },
     ]
@@ -164,7 +164,7 @@ const seasonItems = [
         duration: '49 min',
         video: {
           src: '/videos/video.mp4',
-          poster: '/public/video-posters/1.jpg',
+          poster: '/video-posters/1.jpg',
         }
       },
       {
@@ -174,7 +174,7 @@ const seasonItems = [
         duration: '56 min',
         video: {
           src: '/videos/video.mp4',
-          poster: '/public/video-posters/2.jpg',
+          poster: '/video-posters/2.jpg',
         }
       },
       {
@@ -184,7 +184,7 @@ const seasonItems = [
         duration: '52 min',
         video: {
           src: '/videos/video.mp4',
-          poster: '/public/video-posters/3.jpg',
+          poster: '/video-posters/3.jpg',
         }
       },
       {
@@ -194,7 +194,7 @@ const seasonItems = [
         duration: '51 min',
         video: {
           src: '/videos/video.mp4',
-          poster: '/public/video-posters/4.jpg',
+          poster: '/video-posters/4.jpg',
         }
       },
       {
@@ -204,7 +204,7 @@ const seasonItems = [
         duration: '53 min',
         video: {
           src: '/videos/video.mp4',
-          poster: '/public/video-posters/5.jpg',
+          poster: '/video-posters/5.jpg',
         }
       },
       {
@@ -214,7 +214,7 @@ const seasonItems = [
         duration: '49 min',
         video: {
           src: '/videos/video.mp4',
-          poster: '/public/video-posters/1.jpg',
+          poster: '/video-posters/1.jpg',
         }
       },
       {
@@ -224,7 +224,7 @@ const seasonItems = [
         duration: '49 min',
         video: {
           src: '/videos/video.mp4',
-          poster: '/public/video-posters/1.jpg',
+          poster: '/video-posters/1.jpg',
         }
       },
     ]

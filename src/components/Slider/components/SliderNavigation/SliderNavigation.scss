@@ -1,9 +1,9 @@
 .slider-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
-  &--tile{
+  &--tile {
     column-gap: fluid-to-laptop(16, 12);
     padding: fluid-to-laptop(16, 12);
     background-color: var(--color-black-06);
@@ -13,7 +13,7 @@
     @include laptop {
       border-radius: var(--border-radius-m);
     }
-  } 
+  }
 
   &--rounded {
     column-gap: fluid-to-laptop(10, 8);
@@ -21,6 +21,10 @@
     .slider-navigation__arrow-button {
       border-radius: 50%;
     }
+  }
+
+  &--space-between {
+    justify-content: space-between;
   }
 
   &--abs-bottom {
@@ -39,7 +43,7 @@
       height: 4px;
       background-color: var(--color-black-20);
       border-radius: 100px;
-      transition-duration: var(--transtition-duration);
+      transition-duration: var(--transition-duration);
 
       &.is-active {
         width: 23px;
