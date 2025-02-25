@@ -115,7 +115,7 @@ svg * {
 
 @font-face {
   font-family: Manrope;
-  src: url("./assets/fonts/Manrope-Regular.woff2") format("woff2");
+  src: url("../assets/fonts/Manrope-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap
@@ -123,7 +123,7 @@ svg * {
 
 @font-face {
   font-family: Manrope;
-  src: url("./assets/fonts/Manrope-Medium.woff2") format("woff2");
+  src: url("../assets/fonts/Manrope-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap
@@ -131,7 +131,7 @@ svg * {
 
 @font-face {
   font-family: Manrope;
-  src: url("./assets/fonts/Manrope-SemiBold.woff2") format("woff2");
+  src: url("../assets/fonts/Manrope-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap
@@ -139,7 +139,7 @@ svg * {
 
 @font-face {
   font-family: Manrope;
-  src: url("./assets/fonts/Manrope-Bold.woff2") format("woff2");
+  src: url("../assets/fonts/Manrope-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap
@@ -746,7 +746,7 @@ a[class] {
   align-items: center;
   column-gap: 6.25rem;
   padding: clamp(3.125rem, 2.117768595rem + 4.132231405vw, 6.25rem) clamp(1.875rem, .867768595rem + 4.132231405vw, 5rem);
-  background: linear-gradient(90deg, var(--color-black-06) 2.42%, rgba(20, 15, 15, .97) 25.46%, rgba(34, 14, 14, .91) 46.72%, rgba(229, 0, 0, 0) 168.98%), url("./assets/images/bg.png") center/cover no-repeat;
+  background: linear-gradient(90deg, var(--color-black-06) 2.42%, rgba(20, 15, 15, .97) 25.46%, rgba(34, 14, 14, .91) 46.72%, rgba(229, 0, 0, 0) 168.98%), url("../assets/images/bg.png") center/cover no-repeat;
   border: var(--border);
   border-radius: var(--border-radius-l)
 }
@@ -761,7 +761,7 @@ a[class] {
 
 @media (width <=30rem) {
   .banner__inner {
-    background: linear-gradient(135deg, var(--color-black-06) .42%, rgba(20, 15, 15, .97) 25.46%, rgba(34, 14, 14, .91) 46.72%, rgba(229, 0, 0, 0) 168.98%), url("./assets/images/bg_mobile.png") center/cover no-repeat
+    background: linear-gradient(135deg, var(--color-black-06) .42%, rgba(20, 15, 15, .97) 25.46%, rgba(34, 14, 14, .91) 46.72%, rgba(229, 0, 0, 0) 168.98%), url("../assets/images/bg_mobile.png") center/cover no-repeat
   }
 }
 
@@ -1389,7 +1389,7 @@ a[class] {
   flex-grow: 1;
   padding-top: clamp(9.375rem, 8.4684917355rem + 3.7190082645vw, 12.1875rem);
   padding-bottom: clamp(3.125rem, 1.493285124rem + 6.694214876vw, 8.1875rem);
-  background: var(--heroGradientTop), var(--heroGradientBottom), url("./assets/images/bg2.png") 50%/cover;
+  background: var(--heroGradientTop), var(--heroGradientBottom), url("../assets/images/bg2.png") 50%/cover;
   background-repeat: no-repeat
 }
 
@@ -2663,7 +2663,7 @@ table th {
 }
 
 .select {
-  --selectButtonArrowIconUrl: url("./assets/images/arrow-down_gray.svg");
+  --selectButtonArrowIconUrl: url("../assets/images/arrow-down_gray.svg");
   --selectButtonArrowIconSize: clamp(1.25rem, .25rem + 1.25vw, 1.5rem);
   --selectButtonGapX: clamp(.25rem, -.25rem + .625vw, .375rem);
   --selectButtonPaddingX: clamp(.5rem, -.5rem + 1.25vw, .75rem);
